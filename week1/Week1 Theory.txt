@@ -1,0 +1,5 @@
+What is a Class?
+https://screencast-o-matic.com/watch/cYhFickOqU
+
+Class Contructors, Getters & Setters
+https://screencast-o-matic.com/watch/cYhF19kOqn
