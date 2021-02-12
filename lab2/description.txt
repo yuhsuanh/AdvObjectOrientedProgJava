@@ -1,0 +1,33 @@
+Submit the .java source files for the following tasks: 
+
+Task 1: Student class
+	Create a Student class
+	it will store name and age
+	The student name must at at least 5 characters
+	The student age must be at least 18
+
+Task 2: Button Interface
+	Create Interface Button
+	Give it two constants and two methods (be creative)
+
+Task 3: Keyboard abstract class
+	Create abstract class Keyboard
+	Give the abstract class two instance variables, concrete methods, abstract methods and constructors
+	Be creative
+
+Task 4: Computer class
+	Create concrete class named Computer
+	This class is based on Keyboard class and implements Button
+	Be creative
+
+Task 5 : Dealer's Choice
+ 
+	Below are 3 entities
+		1. Human
+		2. Hair
+		3. Heart
+
+		Create a concrete, abstract and interface from the objects above
+		Each entity (concrete, abstract & interface) has a feature list (instance variable, constant, concrete method, abstract method, constructor, etc)
+		Create 2 instances of each feature for each entity
+		Be as creative as you like
