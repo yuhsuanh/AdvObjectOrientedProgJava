@@ -1,0 +1,19 @@
+Submit the .java source files for the following tasks:
+
+Task 1
+	Create a Box class with 6 instance variables
+		2 each public, private, protected
+	Create 3 constructors + the default constructor
+	Create get and set methods for private and protected instance variables
+		Give any restriction to the set methods ( has min length, has min value, etc)
+			If restrictions met
+				Set value
+			If not
+				output message
+
+Task 2
+	Create a Box class runner
+	Ask the user how many Box objects to instantiate 
+	In loop
+		Ask user for values of the six instance variables
+		Pass the values to constructor (no error handling required for now)
