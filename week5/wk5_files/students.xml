@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<studentid>123456</studentid>
+		<name>
+			<first>John</first>
+			<last>Doe</last>
+		</name>
+	</student>
+	<student>
+		<studentid>98765</studentid>
+		<name>
+			<first>Jane</first>
+			<last>Deer</last>
+		</name>
+	</student>
+</students>

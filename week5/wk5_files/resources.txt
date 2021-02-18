@@ -1,0 +1,8 @@
+FileChooser
+https://www.youtube.com/watch?v=hNz8Xf4tMI4
+
+XML Parser
+https://www.youtube.com/watch?v=HfGWVy-eMRc
+
+Working with TableView
+https://www.youtube.com/watch?v=uh5R7D_vFto
