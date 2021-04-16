@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.CompanyEditController">
+   <children>
+      <Label layoutX="139.0" layoutY="270.0" text="Company Name">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="101.0" layoutY="93.0" text="Image">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="164.0" layoutY="305.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="177.0" layoutY="340.0" text="City">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="163.0" layoutY="373.0" text="Province">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="152.0" layoutY="407.0" text="Postal Code">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="textFieldAddress" layoutX="281.0" layoutY="300.0" promptText="1 Georgian Drive">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldCity" layoutX="281.0" layoutY="335.0" promptText="Barrie">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldProvince" layoutX="281.0" layoutY="368.0" promptText="Ontario">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldPostal" layoutX="281.0" layoutY="402.0" promptText="L4M 3X9">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldName" layoutX="281.0" layoutY="265.0" promptText="Auto World">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="121.0" layoutY="32.0" text="Edit Compamy Information">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Button fx:id="buttonChooseFile" layoutX="425.0" layoutY="88.0" mnemonicParsing="false" onAction="#uploadImageActionPerformed" text="Upload Image">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="buttonSave" layoutX="339.0" layoutY="463.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="buttonCancel" layoutX="213.0" layoutY="463.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fx:id="imageViewLogo" fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

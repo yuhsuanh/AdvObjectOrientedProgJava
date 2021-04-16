@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.AutoWorldController">
+   <children>
+      <Label layoutX="88.0" layoutY="63.0" text="Welcome to Selling Car App">
+         <font>
+            <Font name="Cooper Black" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageViewLogo" fitHeight="196.0" fitWidth="236.0" layoutX="182.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="205.0" layoutY="402.0" text="Click Image to ENTER APPLICATION" />
+   </children>
+</AnchorPane>

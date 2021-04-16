@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.CompanyInfoController">
+   <children>
+      <ImageView fx:id="imageViewLogo" fitHeight="223.0" fitWidth="335.0" layoutX="133.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="65.0" layoutY="322.0" text="Number of Cars Sold">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName" layoutX="206.0" layoutY="23.0" text="Auto World">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelAddress" layoutX="65.0" layoutY="422.0" text="1 Georgian Drive">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="322.0" text="Total Profit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPostal" layoutX="481.0" layoutY="422.0" text="A1A 1A1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCity" layoutX="260.0" layoutY="422.0" text="Barrie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelProvince" layoutX="375.0" layoutY="422.0" text="Ontario">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonEditCompany" layoutX="275.0" layoutY="465.0" mnemonicParsing="false" onAction="#enterEditCompanyPage" text="Edit Company Information">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="65.0" layoutY="393.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNumSold" layoutX="123.0" layoutY="346.0" text="Label" textFill="#27ae60">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelProfit" layoutX="377.0" layoutY="346.0" text="Label" textFill="#e74c3c">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonCancel" layoutX="199.0" layoutY="465.0" mnemonicParsing="false" onAction="#cancel" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
