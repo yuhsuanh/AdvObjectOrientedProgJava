@@ -1,0 +1,164 @@
+/*
+	Activity: A rectangular area that displays something
+	onCreate(): the first method that will fire when an Activity is loaded
+	findViewById(): a way to locate resources in your Activity
+*/
+
+//EventListener 事件監聽器
+Button addBtn = (Button) findViewById(R.id.addBtn);
+addBtn.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View view) {
+		//TODO: Do something
+	}
+});
+
+
+
+/*
+	Activity: A rectangular area that displays something
+	Intent: An action being requested that the device should try to perform
+	IntentService: Services that can handle Intent requests and process the work to be done
+	BroadcastReceivers: Receives an Intent from a sendBroadcast method often indicating that some work has been completed
+*/
+//Preferences -> General -> Auto Import
+
+
+//Go to Other Activity
+Intent secondIntent = new Intent(getApplicationContext(), SecondActivity.class);
+	//put something information to another activity
+	startIntent.purExtra("message", "HELLO WORLD");
+startActivity(startIntent);
+
+//SecondActivity get information
+if(getIntent().hasExtra("message")) {
+	String text = getIntent().getExtras().get("message");
+}
+
+
+//Go to other outside website
+String google = "https://www.google.com";
+Uri webAddress = Uri.parse(google);
+
+Intent gotoGoogle = new Intent(Intent.ACTION_VIEW, webAddress);
+if(gotoGoogle.resolveActivity(getPackageManager()) != null) {
+	startActivity(gotoGoogle);
+}
+
+
+
+//ListView change layout_width to match_parent
+ListView listView = (ListView) findViewById(R.id.myListView);
+	//get data from resources
+	res.getStringArray(R.array.items);
+
+//Create a layout for listview detail (LinerLayout), then
+//1.
+listView.setAdaptor(new ArrayAdapter<String>(this, R.layout.my_listview_detail, items));
+
+//Create a layout for listview detail (RelativeLayout), then
+//2. 用Adaptor來創建List中的內容，
+//2.1	- 設定 ArrayAdapter 
+//2.2	- 在listview detail中創建要顯示的資料 (只創資料的欄位內容) 17.30
+//2.3	- 抓取所需的資料內容 19.15
+//2.3	- 創建一個新的 Adaptor Class (繼承 BaseAdaptor)19.40
+//2.4	- 設定 Adaptor 內容 21.45
+//2.5	- 在Adaptor中設定 LayoutInflator 23.10
+//2.6	- 在MainActivity中顯示Adaptor 32.20
+
+
+
+//3.
+//3.1	- 創建一個新的Gallery -> Empty Activity (Detail Activity) 33.15
+//3.2	- 在MainActivity中建立Item的onItemClick Listener 36.30
+//3.3	- 把圖片放到 resource -> drawable directory 42.20
+//3.4	- 
+
+
+
+
+----------------------------------------------------------------------
+//Create file name
+private static final String FILE_NAME = "file.txt";
+
+//Create file save method
+public void save(View v) {
+	String text = //GetText from layout
+	FileOutputStream = fos = null;
+		
+	try {
+		fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
+		fos.write(text.getBytes());
+		
+	} catch (FileNotFoundException e) {
+		e.printStackTrace();
+	} catch (IOException e) {
+		e.printStackTrace();
+	} finally {
+		if(fos != null) {
+			try {
+			fos.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}
+
+
+//Create file load method
+public void load(View v) {
+	FileInputStream fis = null;
+	
+	try {
+		fis = openFileInput(FILE_NAME);
+		InputStreamReader isr = new InputStreamReader(fis);
+		BufferedReader bt = new BufferedReader(isr);
+		StringBuilder sb = new StringBuilder();
+		String text;
+		
+		while((text = br.readLine()) != null) {
+			sb.append(text).append("\n");
+		}
+		
+		//TODO Something after you get the data from file
+		
+	} catch(){
+	} finally {
+		//TODO close
+	}
+}
+
+//如何找到該檔案
+//skip
+
+
+//write file
+
+private boolean isExternalStorageWritable() {
+	if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageStatus())) {
+		Log.i("","");
+		return true;
+	} else {
+		return false;
+	}
+}
+
+public boolean checkPermission(String permission) {
+	int check ContextCompat.checkDelfPermission(this, permission);
+	return (check == PackageManager.Permission_Granted);
+}
+
+public void writeFile(View v) {
+	if(isExternalStorageWritable() && checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+		File textFile = new File(Environment.getExternalStorageDirectory(), fileName.getText().toString());
+		
+		FileOutputStream fos = new FileOutputStream(textFile);
+		fos.write(text.getText(),.toString().toBytes());
+		fos.close();
+	}
+}
+
+
+
