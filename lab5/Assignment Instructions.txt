@@ -1,0 +1,39 @@
+Submit the .java source files for the following tasks:
+
+
+Task 1
+Create an ArrayList of 3 String elements
+Ask the user for an element value
+Determine if this value is in the ArrayList
+Remove if it is
+Using 3 iteration structures, display all the elements
+(For loop & while loop + iterator() method)
+
+
+Task 2
+Create a LinkedList of 10 random Integers
+Using the ListIterator, start with index 5 (6th element)
+Go forward twice (display the 6th and 7th element
+Go backwards 5 times(display 7th-3rd elements)
+Sort the LinkedList
+Output the min and max values
+Shuffle the LinkedList.
+Output all the elements of the LinkedList using for loop
+
+
+Task3
+Create a TreeSet of Characters
+add 6 Strings (A-F)
+get all characters that come before the letter C
+will return SortedSet
+get all characters that come after letter B
+will return SortedSet
+using enhanced for loop, output all the characters for both SortedSets
+
+
+Task 4
+Create a Map that stores a user's fav colors
+The map should be integer and string
+Ask the user 3 times for their top 3 colors
+Output the map values to the screens
+

@@ -1,0 +1,17 @@
+Submit the .java source files for the following tasks:
+
+
+Task 1
+Use the LongStream
+Create a stream of longs from 1 to 100
+Find the min, max, sum and average of this stream.
+
+
+Task 2
+Create a list of Strings
+Output all of the strings in their uppercase format
+
+
+Task 3
+Create 5 random numbers between 1 and 25
+Output the max value
